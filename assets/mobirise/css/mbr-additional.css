@@ -1075,7 +1075,6 @@ a {
 .cid-s48OLK6784 .navbar .navbar-collapse {
   justify-content: flex-end;
   z-index: 1;
-  display: none !important;
 }
 .cid-s48OLK6784 .navbar.collapsed .nav-item .nav-link::before {
   display: none;
