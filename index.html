@@ -68,6 +68,7 @@
                 <h1 class="mbr-section-title mbr-fonts-style mb-3 display-1"><strong>Nicole</strong><br></h1>
                 
                 <p class="mbr-text mbr-fonts-style display-7">Nutrition and Personal coach<br>💥 Helping you simplify nutrition<br>Get long-term results<br>📚 PN Certified Nutrition Coach<br>Former couch potato ⬇️ 45kgs</p>
+
                 <!-- Custom Code -->
 		<div class="mbr-section-btn mt-3"><a class="btn btn-danger display-4" href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/boldnix/30min'});return false;">Book Free Consult</a></div>
 
@@ -297,8 +298,7 @@
             
             
             
-            
-            
+                     
         </div>
     </div>
 </section>
@@ -335,15 +335,29 @@
     
 
     
-    
+    <!-- Custom Code -->    
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-8 mx-auto mbr-form" data-form-type="formoid">
 
-        <!-- Custom Code -->
+
+          <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+          <script>
+          function fireSweetAlert() {
+          Swal.fire(
+                  'Thank you!',
+                  'Received your interest!',
+                  'success'
+                  )
+          }
+          </script>
+
+
+
 	<form
 	  method="POST"
 	  action="https://script.google.com/macros/s/AKfycbyjTz3I3kpE1FRKM0PrEO4Kg3j_IZbcaSxEYrD5OdlywSHuma2fiYsCfMAt378Tr0Eh2Q/exec"
+	  onSubmit="fireSweetAlert()"
 	  target="hidden-form">
                     <div class="row">
                         <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks for filling out the form!</div>
@@ -364,8 +378,7 @@
                         <div class="col-lg col-md col-12 form-group mb-3" data-for="email">
                             <input type="email" name="Email" placeholder="Email" data-form-field="email" class="form-control" id="email-form2-19" required>
                         </div>
-                        <div class="mbr-section-btn col-md-auto col"><button type="submit" onclick="alert('Success!')" class="btn btn-warning display-4">Notify Me!</button></div>
-
+                        <div class="mbr-section-btn col-md-auto col"><button type="submit" class="btn btn-warning display-4">Notify Me!</button></div>
 
                     </div>
                 </form>
